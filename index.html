@@ -43,6 +43,8 @@
 		 * My function = start from the 0 item in the list, end at the fourth item, and increment is +1
 		 */
 		
+		var asianFood = [];
+		
 		for(var i=0; i<5; i++){
 			
 			/*
@@ -58,30 +60,29 @@
 			 */
 			
 			if(Food.cuisine == "asian"){
-			console.log(Food)
+			asianFood.push(Food)
 			}else{
 			console.log("not today");
 			} //end of conditional
 			
-			/*
-			 * 
-			 */
-			
 		}// end of for loop
+		
+		return(asianFood);
 		
 		}// end of pickRestaurants function
 		
 		
 		/*
-		 * This should make my restaurantsBelow116 list goes through the pickRestaurants function.
+		 * Three asian restaurants from the below list
+		 * Two asian restaurants from the above list
 		 */
 		console.log("pickRestaurantsBelow116");
-		pickRestaurants(restaurantsBelow116);
-
+		Below = pickRestaurants(restaurantsBelow116);
+		console.log(Below)
+		
 		console.log("pickRestaurantsAbove116");
-		pickRestaurants(restaurantsAbove116);
-		
-		
+		Above = pickRestaurants(restaurantsAbove116);
+		console.log(Above)
 		
 	</script>
 		
