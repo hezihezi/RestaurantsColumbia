@@ -42,8 +42,23 @@
 		
 		for(var i=0; i<5; i++){
 			
-			console.log(restaurantsBelow116[i])
-			console.log(restaurantsAbove116[i])
+			/*
+			 * create two addition labels to avoid repetition
+			 * DRY = Don't Repeat Yourself.
+			 */
+			
+		var Below = restaurantsBelow116[i]
+		var Above = restaurantsAbove116[i]
+			
+			
+			if(Below.cuisine == "asian"){
+			console.log(Below)
+			} //end of if statement
+			
+			if(Above.cuisine == "asian"){
+			console.log(Above)
+			} //end of if statement
+			
 			
 		}// end of for loop
 		
