@@ -46,19 +46,19 @@
 		for(var i=0; i<5; i++){
 			
 			/*
-			 * create two addition labels to avoid repetition
+			 * create an addition label to avoid repetition
 			 * DRY = Don't Repeat Yourself.
 			 */
 			
-		var Restaurant = (Restaurant[i])
+		var Food = (Restaurant[i])
 			
 			/*
 			 * if the cuisine is asian, log the object on the console;
 			 * otherwise, log "not today".
 			 */
 			
-			if(Below.cuisine == "asian"){
-			console.log(Restaurant)
+			if(Food.cuisine == "asian"){
+			console.log(Food)
 			}else{
 			console.log("not today");
 			} //end of conditional
@@ -70,6 +70,16 @@
 		}// end of for loop
 		
 		}// end of pickRestaurants function
+		
+		
+		/*
+		 * This should make my restaurantsBelow116 list goes through the pickRestaurants function.
+		 */
+		console.log("pickRestaurantsBelow116");
+		Below = pickRestaurants(restaurantsBelow116);
+		console.log(Below);
+		
+	
 		
 		
 	</script>
