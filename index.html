@@ -9,6 +9,11 @@
 		<h1>What for Lunch?</h1>
 		
 	<script>
+	
+	/*
+	 * Here are two lists of restaurants around the university that I often go during weekdays. 
+	 * The first list are restaurants below 116th street, and the second are ones above.
+	 */
 		
 		var restaurantsBelow116 =[
 		{name:"thaimarket", cuisine:"asian"},
@@ -24,7 +29,27 @@
 		{name:"jinramen", cuisine:"asian"},
 		{name:"massawa", cuisine:"african"}];
 		
+		/*
+		 * "for" loop
+		 * it has round parens, which means "function"
+		 * "for" is a function that javascript already knows what to do with
+		 * 
+		 * required ingredients: where to start, where to end, how many to increment
+		 * ++ means +1, +=i+2
+		 * 
+		 * My function = start from the 0 item in the list, end at the fourth item, and increment is +1
+		 */
+		
+		for(var i=0; i<5; i++){
+			
+			console.log(restaurantsBelow116[i])
+			console.log(restaurantsAbove116[i])
+			
+		}// end of for loop
+		
+		
 	</script>
+		
 		
 		
 	</body>
