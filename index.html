@@ -29,6 +29,9 @@
 		{name:"jinramen", cuisine:"asian"},
 		{name:"massawa", cuisine:"african"}];
 		
+		
+		function pickRestaurants(Restaurant){
+		
 		/*
 		 * "for" loop
 		 * it has round parens, which means "function"
@@ -47,24 +50,21 @@
 			 * DRY = Don't Repeat Yourself.
 			 */
 			
-		var Below = restaurantsBelow116[i]
-		var Above = restaurantsAbove116[i]
-			
+		var Restaurant = (Restaurant[i])
 			
 			if(Below.cuisine == "asian"){
-			console.log(Below.name)
+			console.log(Restaurant)
 			}else{
 			console.log("not today");
 			} //end of conditional
 			
-			if(Above.cuisine == "asian"){
-			console.log(Above.name)
-			}else{
-			console.log("not today");
-			} //end of conditional
-			
+			/*
+			 * 
+			 */
 			
 		}// end of for loop
+		
+		}// end of pickRestaurants function
 		
 		
 	</script>
